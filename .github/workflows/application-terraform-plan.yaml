@@ -13,7 +13,7 @@ on:
 
 jobs:
   Run-Terraform:
-    uses: areorrtwetb/github-templates/Terraform-Deploy.yml@main
+    uses: areorrtwetb/github-templates/.github/workflows/Terraform-Deploy.yml@main
     secrets: inherit
     with:
       terraform_mode: plan

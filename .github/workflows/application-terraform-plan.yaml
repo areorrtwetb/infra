@@ -1,0 +1,19 @@
+
+name: Terraform Plan
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches:
+      - main
+      - feature/*
+  release:
+    types: [created]
+  workflow_dispatch:
+
+jobs:
+  Run-Terraform:
+    uses: areorrtwetb/github-templates/Terraform-Deploy.yml@main
+    secrets: inherit
+    with:
+      terraform_mode: plan

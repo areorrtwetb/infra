@@ -1,10 +1,11 @@
 name: Terraform Plan
 on:
   workflow_dispatch:
-    target_env:
-      description: 'The environment to deploy to'
-      type: environment
-      required: true
+    inputs:
+      target_env:
+        description: 'The environment to deploy to'
+        type: environment
+        required: true
 
 jobs:
   Run-Terraform:

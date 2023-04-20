@@ -1,15 +1,10 @@
-
 name: Terraform Plan
 on:
-  pull_request:
-    branches: [main]
-  push:
-    branches:
-      - main
-      - feature/*
-  release:
-    types: [created]
   workflow_dispatch:
+    target_env:
+      description: 'The environment to deploy to'
+      type: environment
+      required: true
 
 jobs:
   Run-Terraform:

@@ -1,7 +1,7 @@
-name: Terraform Apply - Select environment
-# Event to trigger on...
+name: Terraform Apply
 
-on: 
+
+on:
   workflow_dispatch:
     inputs:
       target_env:

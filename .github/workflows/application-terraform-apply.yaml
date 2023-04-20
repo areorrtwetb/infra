@@ -11,7 +11,7 @@ on:
 
 jobs:
   Run-Terraform:
-    uses: areorrtwetb/github-templates/.github/workflows/Terraform-Deploy.yml@main
+    uses: areorrtwetb/github-templates/.github/workflows/Terraform-Deploy.yml@task/test-pipe
     secrets: inherit
     with:
       terraform_mode: apply

@@ -14,4 +14,5 @@ jobs:
     uses: areorrtwetb/github-templates/.github/workflows/Terraform-Deploy.yml@task/test-pipe
     secrets: inherit
     with:
+      environment: ${{ inputs.target_env }}
       terraform_mode: apply
